@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+.main-time{
+    right:50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    position:absolute;
+}
+
+
+.main-time * {
+    font-family: 'Open Sans', sans-serif;
+    display: inline;
+    color: #424242;
+    font-size: 8em;
+    padding: .2em;
+}
+
+.main-time .hour {
+    padding-right:0;
+}
+
+.main-time .sep {
+    padding: 0;
+}
+
+.main-time .min {
+    padding-left: 0;
+}
+.main-time .sec {
+    color: #f44336
+}
+
