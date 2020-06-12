@@ -7,16 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
     hour: number; 
-    min: number;  
+    min: string;  
     sec: number;
   constructor() { }
 
   ngOnInit(): void {
       setInterval(() => {
           let d = new Date();
-          this.hour = d.getHours();
-          this.min = d.getMinutes();
-          this.sec = d.getSeconds();
+          this.hour = ("0" + d.getHours()).slice(-2);
+          this.min = ("0" + d.getMinutes()).slice(-2);
+          this.sec = ("0" + d.getSeconds()).slice(-2);
       }, 1000);
   }
 }
