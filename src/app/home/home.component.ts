@@ -12,10 +12,11 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-      let d = new Date();
-      this.hour = d.getHours();
-      this.min = d.getMinutes();
-      this.sec = d.getSeconds();
+      setInterval(() => {
+          let d = new Date();
+          this.hour = d.getHours();
+          this.min = d.getMinutes();
+          this.sec = d.getSeconds();
+      }, 1000);
   }
-
 }
