@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+    hour: number; 
+    min: number;  
+    sec: number;
   constructor() { }
 
   ngOnInit(): void {
+      let d = new Date();
+      this.hour = d.getHours();
+      this.min = d.getMinutes();
+      this.sec = d.getSeconds();
   }
 
 }
